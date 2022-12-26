@@ -1,4 +1,4 @@
-abstract class Component {
+ abstract class Component {
   protected container: HTMLElement;
   constructor(tagName:string, className:string) {
     this.container = document.createElement(tagName);
