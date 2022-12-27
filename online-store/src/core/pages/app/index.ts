@@ -3,6 +3,7 @@ import StorePage from "../store-page";
 import CartPage from "../cart-page";
 import ProductPage from "../product-page";
 import Header from "../../components";
+import ErrorPage from "../eror-page";
 export const enum PageIds {
 
   StorePage = 'store-page',
@@ -27,6 +28,8 @@ class App {
       page = new ProductPage(idPage);
     }else if(idPage === PageIds.CartPage){
       page = new CartPage(idPage);
+    }else{
+      page = new ErrorPage(idPage, '404')
     }
     if(page){
       const PageHTML = page.render();
