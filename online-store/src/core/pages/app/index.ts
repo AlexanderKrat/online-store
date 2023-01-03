@@ -5,7 +5,6 @@ import ProductPage from "../product-page";
 import Header from "../../components";
 import ErrorPage from "../eror-page";
 export const enum PageIds {
-
   StorePage = 'store-page',
   ProductPage = 'product-page',
   CartPage = 'cart-page'
