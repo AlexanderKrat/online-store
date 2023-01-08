@@ -17,6 +17,7 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "acorn": "^8.8.1",
     "acorn-import-assertions": "^1.8.0",
     "ajv": "^6.12.6",
@@ -28,6 +29,7 @@
     "balanced-match": "^1.0.2",
     "big.js": "^5.2.2",
     "boolbase": "^1.0.0",
+    "bootstrap": "^5.2.3",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.2",
     "browserslist": "^4.21.4",
