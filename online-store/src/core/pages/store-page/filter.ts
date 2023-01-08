@@ -3,6 +3,7 @@ import { PRODUCTS } from './../../components/data';
 import { Product, FilterDataType, FiltersNameEnum, FilterStringDataType, FilterRangeDataType, FilterRangeType } from './../../components/types';
 import { FilterStringType, ValueFiltersInterface } from "../../components/types";
 import { Sorters } from './sort';
+
 export class Filters implements ValueFiltersInterface {
     static currentCollection: Product[];
 
@@ -192,6 +193,4 @@ export class Filters implements ValueFiltersInterface {
             }
         }
     }
-
-
 }
