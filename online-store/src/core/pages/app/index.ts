@@ -1,9 +1,9 @@
-import Page from "../../templates/page";
+import Page from "../../components/page";
 import StorePage from "../store-page";
-import CartPage from "../cart-page";
+import CartPage from "../card-page";
 import ProductPage from "../product-page";
-import Header from "../../components";
-import ErrorPage from "../eror-page";
+import Header from "../../components/layouts/header";
+import ErrorPage from "../error-page";
 export const enum PageIds {
   StorePage = 'store-page',
   ProductPage = 'product-page',
@@ -45,11 +45,11 @@ class App {
   }
   constructor(){
     this.initialPage = new StorePage('store-page')
-    this.header = new Header('header', 'header')
+    this.header = new Header('nav', 'navbar navbar-expand-lg bg-light')
   } 
 
   run(){
-    App.container.append(this.header.render())
+    App.container.append(this.header.render(),this.initialPage.createWrapperBlock())
     App.renderNewPage('store-page')
     this.enableRouteChange()
   }

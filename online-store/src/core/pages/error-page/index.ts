@@ -1,4 +1,4 @@
-import Page from "../../templates/page";
+import Page from "../../components/page";
 
 class ErrorPage extends Page {
   private errorType:string;
