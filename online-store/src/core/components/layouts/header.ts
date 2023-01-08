@@ -1,5 +1,5 @@
 import Component from "../components";
-import { PageIds } from "../../pages/app";
+import { PageIds } from "../../app";
  const Buttons = [
   {
   id: PageIds.StorePage,

@@ -1,9 +1,9 @@
-import Page from "../../components/page";
-import StorePage from "../store-page";
-import CartPage from "../card-page";
-import ProductPage from "../product-page";
-import Header from "../../components/layouts/header";
-import ErrorPage from "../error-page";
+import Page from "../components/page";
+import StorePage from "../pages/store-page";
+import CartPage from "../pages/card-page";
+import ProductPage from "../pages/product-page";
+import Header from "../components/layouts/header";
+import ErrorPage from "../pages/error-page";
 export const enum PageIds {
   StorePage = 'store-page',
   ProductPage = 'product-page',
