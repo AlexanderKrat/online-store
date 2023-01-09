@@ -1,5 +1,5 @@
+import StorePage from '.';
 import { Product, SortByEnum, SortersInterface } from './../../components/types';
-import { Filters } from './filter';
 import { SearchField } from './search';
 export class Sorters implements SortersInterface{
     static currentCollection: Product[];
@@ -25,7 +25,7 @@ export class Sorters implements SortersInterface{
             default:
                 break;
         }
-        const createProductsItems = new Storage();
+        const createProductsItems = new StorePage('store-page');
         createProductsItems.createProductsItems(Sorters.currentCollection); 
     }
     

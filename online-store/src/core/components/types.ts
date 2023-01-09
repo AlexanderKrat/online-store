@@ -74,6 +74,8 @@ export interface SortersInterface {
     checkForActiveSorterBtn(btn: HTMLButtonElement): void;
     checkForActiveSortersOnReload(): void;
 }
-export interface SliderPriceOnterface extends ValueFiltersInterface{
-    
+export interface SearchFieldInterface{
+    createSearchField():HTMLElement;
+    createSearchFieldClearBtn(inputElem: HTMLInputElement): HTMLButtonElement;
+
 }

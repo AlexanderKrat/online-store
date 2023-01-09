@@ -4,9 +4,11 @@ import { BrandFilterInterface, CardInterface, FiltersNameEnum, Product } from ".
 import { BrandFilter } from "./brand_filter";
 import { Filters } from "./filter";
 import { Product_list } from "./product_list";
+import { SearchField } from "./search";
 import { Sorters } from "./sorts";
 
-class StorePage extends Page{
+export class StorePage extends Page{
+
   
   constructor(id:string){
    super(id)
@@ -38,10 +40,12 @@ class StorePage extends Page{
     const sort_products: HTMLDivElement = document.createElement('div');
     sort_products.className = "sort-products d-flex justify-content-between";
 
-    const createSort =new Sorters();
+    const createSort = new Sorters();
+
+    const search_bar = new SearchField();
     
     const products_items = this.createProductsItems();
-    sort_products.append(createSort.createSorters());
+    sort_products.append(createSort.createSorters(), search_bar.createSearchField());
     
     products_block.append(sort_products,products_items);
     wrapper.append(filter_block,products_block);
