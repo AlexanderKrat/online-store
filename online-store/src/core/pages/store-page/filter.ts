@@ -5,8 +5,9 @@ import { SearchField } from "./search";
 import { Sorters } from "./sorts";
 
 export class Filters implements ValueFiltersInterface{
-    static currentCollection: Product[];
 
+    static currentCollection: Product[];
+    
     static initialFilter(): void {
         if (!localStorage.getItem('filters')) {
             localStorage.setItem(
@@ -173,7 +174,7 @@ export class Filters implements ValueFiltersInterface{
         if(filterArr?.length){
             for (const key of filterBtns) {
                 if (filterArr.includes(key.getAttribute(filterName)as string)) {
-                    key.className = "'common-btn--active";
+                    key.className = "common-btn--active";
                 }
             }
         }
