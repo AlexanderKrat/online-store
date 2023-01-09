@@ -1,3 +1,4 @@
+import StorePage from ".";
 import { PRODUCTS } from "../../components/data";
 import { FilterDataType, FilterRangeDataType, FilterRangeType, FiltersNameEnum, FilterStringDataType, FilterStringType, Product, ValueFiltersInterface } from "../../components/types";
 import { SearchField } from "./search";
@@ -73,7 +74,7 @@ export class Filters implements ValueFiltersInterface{
 
         Filters.currentCollection = filteredArr;
         Sorters.currentCollection = filteredArr;
-        const createProductsItems = new Storage();
+        const createProductsItems = new StorePage('store-page');
         createProductsItems.createProductsItems(filteredArr);
 
         if (activeSorter) {
